@@ -7,16 +7,16 @@ import java.util.regex.*;
 public class Solution {
     public static boolean hasFactor(int i, int ar[]) {
         for(int j=0;j<ar.length;j++) {
-            if(i%ar[j]!=0)
-                return false;  
+            if (ar[j]%i!=0)
+                return false;
         }
         return true;
     }
     
     public static boolean isFactor(int i, int ar[]) {
         for(int j=0;j<ar.length;j++) {
-            if (ar[j]%i!=0)
-                return false;
+            if(i%ar[j]!=0)
+                return false;  
         }
         return true;
     }
@@ -60,7 +60,7 @@ public class Solution {
         
         int counter=0;
         for(int i=max_a;i<=min_b;i++) {
-            if(hasFactor(i,a) && isFactor(i,b))
+            if(isFactor(i,a) && hasFactor(i,b))
                 counter++;
         }
         System.out.println(counter);
