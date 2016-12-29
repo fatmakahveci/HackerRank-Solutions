@@ -9,4 +9,4 @@ for i in range(n):
     sum_list+=weighted_list[i]*weight_list[i]
     sum_weight+=weight_list[i]
 
-print(float(sum_list/sum_weight))
+print(round(float(sum_list/sum_weight),1))
