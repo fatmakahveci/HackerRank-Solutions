@@ -6,11 +6,11 @@ public class Solution {
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
         String sentence=scan.next();
-        String min=sentence.substring(0,3);
-        String max=sentence.substring(0,3);
+        int k=scan.nextInt();
+        String min=sentence.substring(0,k), max=min;
         
-        for(int i=1;i<sentence.length()-2;i++) {
-            String piece=sentence.substring(i,i+3);
+        for(int i=1;i<sentence.length()-k+1;i++) {
+            String piece=sentence.substring(i,i+k);
             if(piece.compareTo(min)<0)
                 min=piece;
             if(piece.compareTo(max)>0)
