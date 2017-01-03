@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+        String sentence=scan.next();
+        String min=sentence.substring(0,3);
+        String max=sentence.substring(0,3);
+        
+        for(int i=1;i<sentence.length()-2;i++) {
+            String piece=sentence.substring(i,i+3);
+            if(piece.compareTo(min)<0)
+                min=piece;
+            if(piece.compareTo(max)>0)
+                max=piece;
+        }
+        System.out.println(min+"\n"+max);
+    }
+}
