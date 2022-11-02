@@ -2,5 +2,5 @@
 
 while read a
 do
-echo -ne $a" "
+    echo -ne $a" "
 done
