@@ -1,7 +1,8 @@
-    public Difference(int[] elements) {
-        this.elements=elements;
-        this.maximumDifference=maximumDifference;
-    }
+public Difference(int[] elements) {
+    this.elements=elements;
+    this.maximumDifference=maximumDifference;
+}
+
 public void computeDifference() {
     int min=Integer.MAX_VALUE;
     int max=Integer.MIN_VALUE;
@@ -11,7 +12,6 @@ public void computeDifference() {
             min=currentElement;
         if(currentElement>max)
             max=currentElement;
-        
      }
     maximumDifference=Math.abs(max-min);
 }
