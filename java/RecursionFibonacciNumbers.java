@@ -2,7 +2,6 @@ import java.util.*;
 
 public class Solution {
 
-    
     public static int fibonacci(int n) {
         if(n==1)
             return 1;
@@ -11,7 +10,6 @@ public class Solution {
         return fibonacci(n-1)+fibonacci(n-2);
     }
     
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
