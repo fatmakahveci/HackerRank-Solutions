@@ -1,0 +1,61 @@
+# Operating systems
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors and IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Java and JVM
+*.class
+.gradle/
+out/
+target/
+
+# C and C++
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.exe
+a.out
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
